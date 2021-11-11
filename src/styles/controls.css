@@ -13,8 +13,16 @@
     align-items: center;
 }
 
-.button {
-    margin: 0 auto;
+.play-pause {
+  margin: 0 1rem;
+}
+
+.previous {
+  margin-left: auto;
+}
+
+.next {
+  margin-right: auto;
 }
 
 .timeline-container {
