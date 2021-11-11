@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audio Player</title>
-    <link rel="stylesheet" href="./src/styles/audio-player.css" />
-    <link rel="stylesheet" href="./src/styles/content.css" />
-    <link rel="stylesheet" href="./src/styles/album-cover.css" />
-    <link rel="stylesheet" href="./src/styles/controls.css" />
-  </head>
 
-  <body>
-    <div class="content">
-      <div class="content-window">
-        <div class="audio-player">
-          <div class="album-cover-container">
-            <img
-              src="https://hauntologyblog.com/src/images/album-cover-eccojams.jpg"
-              class="album-cover"
-            />
-            <audio
-              src="https://hauntologyblog.com/src/audio/A1.mp3"
-              class="audio-source"
-            ></audio>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Player</title>
+  <link rel="stylesheet" href="./src/styles/audio-player.css" />
+  <link rel="stylesheet" href="./src/styles/content.css" />
+  <link rel="stylesheet" href="./src/styles/album-cover.css" />
+  <link rel="stylesheet" href="./src/styles/controls.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="content-window">
+      <div class="audio-player">
+        <div class="album-cover-container">
+          <img src="https://hauntologyblog.com/src/images/album-cover-eccojams.jpg" class="album-cover" />
+          <audio src="https://hauntologyblog.com/src/audio/A1.mp3" class="audio-source"></audio>
+        </div>
+
+        <div class="controls">
+          <div class="buttons">
+            <button class="button nav-button previous"></button>
+
+            <button class="button play-pause">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+            <button class="button nav-button next"></button>
           </div>
 
-          <div class="controls">
-            <div class="buttons">
-              <button class="button nav-button previous"></button>
-
-              <button class="button play-pause">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-
-              <button class="button nav-button next"></button>
-            </div>
-
-            <div class="timeline-container">
-              <input type="range" class="timeline" max="100" value="0" />
-            </div>
-
-            <div class="volume-container"></div>
+          <div class="timeline-container">
+            <input type="range" class="timeline" max="100" value="0" />
           </div>
+
+          <div class="volume-container"></div>
         </div>
       </div>
     </div>
-    <script src="./src/scripts/audio-player.js"></script>
-  </body>
+  </div>
+  <script src="./src/scripts/AudioPlayer.js"></script>
+  <script src="./src/scripts/main.js"></script>
+</body>
+
 </html>

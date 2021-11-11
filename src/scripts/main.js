@@ -1,5 +1,3 @@
-import AudioPlayer from "./AudioPlayer";
-
 const audioPlayerSelectors = {
   audio: ".audio-source",
   playButton: ".play-pause",
@@ -8,6 +6,8 @@ const audioPlayerSelectors = {
 
 const main = () => {
   const audioPlayer = new AudioPlayer(audioPlayerSelectors);
+  audioPlayer.getElementObjects();
+  audioPlayer.run();
 };
 
 main();
