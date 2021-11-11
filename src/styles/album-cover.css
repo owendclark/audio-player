@@ -1,0 +1,19 @@
+/* Style the Album Cover */
+.album-cover-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--player-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+  
+  .album-cover {
+    height: 70%;
+    width: 70%;
+    border-radius: 1.5rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: var(--white-grey);
+  }

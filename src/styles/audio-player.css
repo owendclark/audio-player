@@ -1,31 +1,45 @@
+/* Init Variables */
 :root {
-  --background-grey: hsl(180, 4%, 24%);
+  --onyx-grey: hsl(180, 4%, 8%);
+  --background-grey: hsl(180, 4%, 16%);
+  --player-grey: hsl(180, 4%, 24%);
   --white-grey: #eee;
-  --play-button-width: 3rem;
+  --bright-blue: #00aaff;
+  --play-button-width: 5rem;
+  --nav-button-width: 3rem;
 }
 
+
+/* Style the Audio Player */
 .audio-player {
   height: 25rem;
   width: 20rem;
-  background-color: var(--background-grey);
-  padding: 1.5rem 0.75rem;
+  background-color: var(--player-grey);
+  border-radius: 1.75rem;
+  border-style: solid;
+  border-color: var(--white-grey);
+  border-width: 0.25rem;
+  padding: 1.5rem 0;
+  margin: auto;
 }
 
 .album-cover-container {
   width: 100%;
   height: auto;
-  background-color: var(--background-grey);
+  background-color: var(--player-grey);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1.5rem;
 }
 
+/*
+
 .album-cover {
   height: 70%;
   width: 70%;
   border-radius: 1.5rem;
-  border-width: 0.25rem;
+  border-width: 0.125rem;
   border-style: solid;
   border-color: var(--white-grey);
 }
@@ -39,6 +53,7 @@
 
 .play-pause {
   background-color: transparent;
+  color: var(--white-grey);
   border: 0;
   height: var(--play-button-width);
   width: var(--play-button-width);
@@ -56,7 +71,7 @@ For Slider Styling:
 ::-webkit-slider-runnable-track
 ::-moz-range-track
 ::-ms-track
-*/
+
 
 .timeline {
   -webkit-appearance: none;
@@ -94,3 +109,5 @@ For Slider Styling:
   border: none;
   background: transparent;
 }
+
+*/

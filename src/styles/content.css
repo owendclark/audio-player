@@ -1,0 +1,14 @@
+/* Create Content Window */
+body {
+    background-color: var(--background-grey);
+}
+
+.content {
+    padding: 1.5rem 2.25rem;
+}
+
+.content-window {
+    background-color: var(--onyx-grey);
+    border-radius: 1.75rem;
+    padding: 1.5rem;
+}
